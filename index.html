@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Note App</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="my-4">
+            <div class="mb-3">
+                <label for="note-title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="note-title">
+            </div>
+            <div class="mb-3">
+                <label for="note-desc" class="form-label">Description</label>
+                <input type="text" class="form-control" id="note-desc">
+            </div>
+            <button type="submit" id="add-note" class="btn btn-primary">Add Note</button>
+        </form>
+        <div class="d-flex justify-content-evenly my-5" id="notes-container">
+            <div class="card border-dark">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Button</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+        integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
