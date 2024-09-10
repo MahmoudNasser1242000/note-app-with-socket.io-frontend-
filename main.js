@@ -46,3 +46,6 @@ const display_notes = (notes) => {
     })
     notes_container.innerHTML = cartona;
 }
+const delete_notes = (id) => {
+    socket.emit("delete-note", id)
+}
